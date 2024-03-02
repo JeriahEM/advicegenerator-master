@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(./assets/Manrope-Bold.ttf);
+}
+
+@font-face {
+  font-family: manrope-reg;
+  src: url(./assets/Manrope-Regular.ttf);
+}
+
+.font{
+  font-family: manrope;
+}
+
+.lightcyan {
+  color: hsl(193, 38%, 86%);
+}
+
+.neongreen {
+  color: hsl(150, 100%, 66%);
+}
+
+.grayblue {
+  color: hsl(217, 19%, 38%);
+}
+
+.darkgray {
+  background-color: hsl(217, 19%, 24%);
+}
+
+.darkblue{
+  color: hsl(218, 23%, 16%);
+}
+
+.bgColor {
+  background-color: hsl(218, 23%, 16%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.card-width{
+  width: 600px;
+  position: relative;
+}
+
+.randomBtn {
+  border-radius: 50%;
+  border: 0px;
+  background-color: hsl(150, 100%, 66%);
+  padding: 18px;
+  position: absolute;
+  right: 270px;
+  bottom: -30px;
+}
+
+.randomBtn:hover {
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 15px 3px hsl(150, 100%, 66%);
+  --bs-btn-active-bg: hsl(150, 100%, 66%);
+}
+
+.randomBtn:active{
+  --bs-btn-active-bg: hsl(150, 100%, 66%);
+}
+
+.adviceNum {
+  font-size: 15px;
+  font-family: manrope-reg;
+  letter-spacing: .3rem;
+  padding-bottom: 10px;
+}
+
+.body-padding {
+  padding: 50px;
+}
+
+@media (max-width: 425px) {
+  .card-width{
+    width: auto;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .body-padding{
+    padding: 50px 20px;
+  }
+
+  .randomBtn {
+    border-radius: 50%;
+    border: 0px;
+    background-color: hsl(150, 100%, 66%);
+    padding: 18px;
+    position: absolute;
+    right: 170px;
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-width{
+    width: 340px;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .randomBtn {
+    border-radius: 50%;
+    border: 0px;
+    background-color: hsl(150, 100%, 66%);
+    padding: 18px;
+    position: absolute;
+    right: 140px;
+    bottom: -30px;
+  }
+
+  .body-padding{
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-width{
+    width: 310px;
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .randomBtn {
+    border-radius: 50%;
+    border: 0px;
+    background-color: hsl(150, 100%, 66%);
+    padding: 18px;
+    position: absolute;
+    right: 125px;
+    bottom: -30px;
+  }
+
+  .body-padding{
+    padding: 50px 5px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
